@@ -12,6 +12,9 @@
 		0450C2A12B7E995F00CBF94D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0450C2A02B7E995F00CBF94D /* Assets.xcassets */; };
 		0450C2A42B7E995F00CBF94D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0450C2A32B7E995F00CBF94D /* Preview Assets.xcassets */; };
 		7E5815512B7EC93700608E10 /* daylight.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7E5815502B7EC93700608E10 /* daylight.svg */; };
+		7E5815562B8041DC00608E10 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5815552B8041DC00608E10 /* Time.swift */; };
+		7E5815582B80436E00608E10 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5815572B80436E00608E10 /* Forecast.swift */; };
+		7E58155A2B804FA900608E10 /* DailyMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5815592B804FA900608E10 /* DailyMetric.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		0450C2A02B7E995F00CBF94D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0450C2A32B7E995F00CBF94D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E5815502B7EC93700608E10 /* daylight.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = daylight.svg; path = Assets.xcassets/daylight.svg; sourceTree = "<group>"; };
+		7E5815552B8041DC00608E10 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		7E5815572B80436E00608E10 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		7E5815592B804FA900608E10 /* DailyMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMetric.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +59,8 @@
 		0450C29B2B7E995E00CBF94D /* AppTempo */ = {
 			isa = PBXGroup;
 			children = (
+				7E5815522B80416000608E10 /* home */,
 				0450C29C2B7E995E00CBF94D /* AppTempoApp.swift */,
-				0450C29E2B7E995E00CBF94D /* ContentView.swift */,
 				0450C2A02B7E995F00CBF94D /* Assets.xcassets */,
 				7E5815502B7EC93700608E10 /* daylight.svg */,
 				0450C2A22B7E995F00CBF94D /* Preview Content */,
@@ -68,6 +74,33 @@
 				0450C2A32B7E995F00CBF94D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E5815522B80416000608E10 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				7E5815532B80418200608E10 /* ui */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		7E5815532B80418200608E10 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				7E5815542B8041BD00608E10 /* component */,
+				0450C29E2B7E995E00CBF94D /* ContentView.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		7E5815542B8041BD00608E10 /* component */ = {
+			isa = PBXGroup;
+			children = (
+				7E5815552B8041DC00608E10 /* Time.swift */,
+				7E5815572B80436E00608E10 /* Forecast.swift */,
+				7E5815592B804FA900608E10 /* DailyMetric.swift */,
+			);
+			name = component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5815582B80436E00608E10 /* Forecast.swift in Sources */,
+				7E5815562B8041DC00608E10 /* Time.swift in Sources */,
+				7E58155A2B804FA900608E10 /* DailyMetric.swift in Sources */,
 				0450C29F2B7E995E00CBF94D /* ContentView.swift in Sources */,
 				0450C29D2B7E995E00CBF94D /* AppTempoApp.swift in Sources */,
 			);
